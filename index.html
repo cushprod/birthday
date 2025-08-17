@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOĞUM GÜNÜN KUTLU OLSUN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Doğum Günü Başlığı -->
+        <header id="birthday-header">
+            <div class="birthday-header">
+                <h1><i class="fas fa-birthday-cake"></i> Doğum Günün Kutlu Olsun!</h1>
+                <p>Kardeşinden, anılarını içeren bir galeri :)</p>
+            </div>
+        </header>
+
+        <!-- Fotoğraf ve Video Galerisi -->
+        <div class="gallery-container">
+            <div class="gallery-header">
+                <h2><i class="fas fa-images"></i> Galeri</h2>
+                <p>Galeriyi bitirdikten sonra en aşağıda bıraktığım notu okumayı unutma.</p>
+            </div>
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Fotoğraf ve videolar buraya dinamik olarak eklenecek -->
+            </div>
+        </div>
+
+        <!-- Bilgilendirme Mesajı -->
+        <div class="info-container">
+            <i class="fas fa-gift"></i>
+            <h3>Doğum Günün Kutlu Olsun Abicim!</h3>
+            <p>Bu hediye tüm anılarını tekrardan canlandırsın ve sana olan sevgimi göstermek, seni mutlu edebilmek için
+                mesafelerin önemsiz olduğunu hatırlatsın istedim.
+                Her fotoğraf ve video özel bir anıyı, senin hayatımıza kattığın güzelliği temsil ediyor.</p>
+
+            <div class="birthday-message">
+                <p>Bu zamana kadar yanımda olduğun birçok konuda sana edebileceğim teşekkürün bir sınırı yok.
+                    İnsanın abisi olmasının kardeş bağı, hayat dostu ve hatta kişisel gelişimim açısından bile bu kadar
+                    önemli olacağını —sen olmasan— asla bilemezdim.
+                    Kendi ayaklarımın üzerine basmam, kendi hedeflerime ulaşmam için bana verdiğin desteğin farkındayım.
+                    Bir abi-kardeş ilişkisinden çok benim için yakın bir arkadaş, destekçi, yoldaşsın.
+                    Her konuda yanımda olduğun için çok mutluyum. İyi ki doğdun! ❤</p>
+            </div>
+        </div>
+        <!-- Yukarı Çık Butonu -->
+        <button id="back-to-top" class="back-to-top-btn">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Slayt Gösterisi -->
+    <div id="slideshow-overlay">
+        <div class="slideshow-container">
+            <button id="skip-slideshow">Slayt Gösterisini Geç <i class="fas fa-forward"></i></button>
+            <div class="slide fade">
+                <img src="" class="slide-image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Fotoğraf/Video Modal -->
+    <div id="media-modal" class="modal">
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+        <button class="modal-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button class="modal-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        <img class="modal-content" id="modal-image">
+        <video class="modal-content modal-video" id="modal-video" controls></video>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
