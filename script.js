@@ -9,7 +9,7 @@ for (let i = 1; i <= totalItems; i++) {
         mediaItems.push({
             id: i,
             type: 'video',
-            url: `img/${i}.mp4`,
+            url: `img/${i}.MP4`,
             thumbnail: 'thumbnails/thumbnail.jpeg',
             title: `Video ${i}`
         });
@@ -283,4 +283,5 @@ backToTopButton.addEventListener('click', () => {
         top: 0,
         behavior: 'smooth'
     });
+
 });
